@@ -43,12 +43,12 @@ class ResizerAppTest {
 
         String absolutePathOutput = absolutePathInput.replaceFirst(FILM_COVER_SOURCE_NAME, FILM_COVER_TARGET_NAME);
 
-        ResizerApp app = new ResizerApp();
+        /*ResizerApp app = new ResizerApp();
         app.setInputFile(new File(absolutePathInput));
         app.setOutputFile(new File(absolutePathOutput));
         app.setResizeWidth(reducedPreviewWidth);
         app.setResizeHeight(reducedPreviewHeight);
-        app.setQuality(100);
+        app.setQuality(100);*/
         app.call();
 
         BufferedImage reducedPreview = ImageIO.read(new File(absolutePathOutput));
@@ -71,11 +71,11 @@ class ResizerAppTest {
         String absolutePathOutput = absolutePathInput.replaceFirst(FILM_COVER_SOURCE_NAME, FILM_COVER_TARGET_NAME);
 
         ResizerApp app = new ResizerApp();
-        app.setInputFile(new File(absolutePathInput));
+        /*app.setInputFile(new File(absolutePathInput));
         app.setOutputFile(new File(absolutePathOutput));
         app.setResizeWidth(reducedPreviewWidth);
         app.setResizeHeight(reducedPreviewHeight);
-        app.setQuality(100);
+        app.setQuality(100);*/
         app.call();
 
         BufferedImage reducedPreview = ImageIO.read(new File(absolutePathOutput));
@@ -177,8 +177,8 @@ class ResizerAppTest {
         String absolutePathOutput = absolutePathInput.replaceFirst(AUDIO_COVER_SOURCE_NAME, AUDIO_COVER_TARGET_NAME);
 
         ResizerApp app = new ResizerApp();
-        app.setInputFile(new File(absolutePathInput + typo));
-        app.setOutputFile(new File(absolutePathOutput));
+        /*app.setInputFile(new File(absolutePathInput + typo));
+        app.setOutputFile(new File(absolutePathOutput));*/
         IIOException generatedException = null;
         try {
             app.call();
@@ -199,9 +199,9 @@ class ResizerAppTest {
         String absolutePathOutput = absolutePathInput.replaceFirst(AUDIO_COVER_SOURCE_NAME, AUDIO_COVER_TARGET_NAME);
 
         ResizerApp app = new ResizerApp();
-        app.setInputFile(new File(absolutePathInput));
+        /*app.setInputFile(new File(absolutePathInput));
         app.setOutputFile(new File(absolutePathOutput));
-        app.setQuality(-50);
+        app.setQuality(-50);*/
         BadAttributesException generatedException = null;
         try {
             app.call();
