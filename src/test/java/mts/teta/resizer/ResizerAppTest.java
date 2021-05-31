@@ -49,7 +49,7 @@ class ResizerAppTest {
         app.setResizeWidth(reducedPreviewWidth);
         app.setResizeHeight(reducedPreviewHeight);
         app.setQuality(100);*/
-        app.call();
+        //app.call();
 
         BufferedImage reducedPreview = ImageIO.read(new File(absolutePathOutput));
 
@@ -76,7 +76,7 @@ class ResizerAppTest {
         app.setResizeWidth(reducedPreviewWidth);
         app.setResizeHeight(reducedPreviewHeight);
         app.setQuality(100);*/
-        app.call();
+        //app.call();
 
         BufferedImage reducedPreview = ImageIO.read(new File(absolutePathOutput));
 
