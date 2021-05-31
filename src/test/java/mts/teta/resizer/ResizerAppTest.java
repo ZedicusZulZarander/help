@@ -32,8 +32,8 @@ class ResizerAppTest {
 
     @Test
     public void testReducingCover() throws Exception {
-        final Integer reducedPreviewWidth = FILM_COVER_WIDTH - 500;
-        final Integer reducedPreviewHeight = FILM_COVER_HEIGHT - 500;
+        final Integer reducedPreviewWidth = FILM_COVER_WIDTH - 50;
+        final Integer reducedPreviewHeight = FILM_COVER_HEIGHT - 50;
 
         URL res = getClass().getClassLoader().getResource(FILM_COVER_SOURCE_NAME);
         assert res != null;
